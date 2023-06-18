@@ -1,0 +1,133 @@
+/* *******IPAD screen***********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar1-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #09507c;
+  }
+  .navbar1-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: 55px;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: -12px;
+    text-align: center;
+  }
+
+  .navbar1-btn {
+    height: 45px;
+    width: 135px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(254, 193, 79);
+  }
+  .navbar1-x {
+    color: whitesmoke;
+    font-size: 25px;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    cursor: pointer;
+  }
+  /*///////////////////////////////////////////////  */
+  /* /////////////////////////////////////////////// */
+  .sub-navbar-container {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-icon-sec {
+    margin-top: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  .menu-icon {
+    width: 35px;
+    margin-bottom: -15px;
+  }
+  .menu-txt {
+    font-size: 12.5px;
+  }
+  #hidden,
+  #hide-search-icon {
+    display: none;
+  }
+  /* /////////////////////////////////////////////// */
+  .main-section-div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-sec-left-img,
+  .main-sec-right-img {
+    width: 50%;
+  }
+  .main-sec-boxes {
+    display: flex;
+    justify-content: space-around;
+  }
+  .prospective-box {
+    width: 37%;
+    height: 325px;
+    margin-top: -240px;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    padding-right: 20px;
+  }
+  .graduation-cap {
+    width: 20px;
+    margin-right: 20px;
+  }
+  .prospective-heading {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  .propspective-txt {
+    font-size: 18px;
+    width: 95%;
+  }
+  .prospective-btn {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #fec14f;
+    width: 95%;
+    height: 45px;
+    position: relative;
+  }
+  .prospective-btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: orange;
+    transition: transform 300ms ease;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .prospective-btn:hover::before,
+  .prospective-btn:focus::before {
+    transform: scaleX(1);
+  }
+  .prospective-btn {
+    z-index: 1;
+  }
+  #line-72 {
+    margin-top: -200px;
+  }
+}

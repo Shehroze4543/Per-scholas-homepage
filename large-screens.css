@@ -1,0 +1,220 @@
+@media (min-width: 1201px) {
+  * {
+    -webkit-transition: all 1ms ease;
+    -moz-transition: all 1ms ease;
+    -o-transition: all 1ms ease;
+    transition: all 1ms ease;
+  }
+  .navbar1-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    height: 80px;
+    background-color: #09507c;
+  }
+  .navbar1-txt {
+    display: flex;
+    justify-content: center;
+
+    max-width: 47%;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar1-btn {
+    margin-left: 15px;
+    height: 45px;
+    width: 135px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(254, 193, 79);
+  }
+  .navbar1-x {
+    color: whitesmoke;
+    font-size: 25px;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    cursor: pointer;
+  }
+  /* /////////////////////////////////////////////// */
+  .sub-navbar-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .sub-nav-left-sec {
+    margin-left: 4%;
+  }
+  .sub-nav-right-sec {
+    display: flex;
+    gap: 5%;
+    margin-left: 7%;
+
+    min-width: 720px;
+  }
+  @media (1300px <= width <= 1400px) {
+    .sub-nav-right-sec {
+      display: flex;
+      gap: 5%;
+      margin-left: 9%;
+
+      min-width: 720px;
+    }
+  }
+
+  @media (1401px <= width <= 1500px) {
+    .sub-nav-right-sec {
+      display: flex;
+      gap: 5%;
+      margin-left: 11%;
+      min-width: 720px;
+    }
+  }
+  @media (1501px <= width <= 1600px) {
+    .sub-nav-right-sec {
+      display: flex;
+      gap: 5%;
+      margin-left: 13%;
+
+      min-width: 720px;
+    }
+  }
+  @media (1601px <= width <= 1700px) {
+    .sub-nav-right-sec {
+      display: flex;
+      gap: 5%;
+      margin-left: 15%;
+
+      min-width: 720px;
+    }
+  }
+  @media (1701px <= width <= 1800px) {
+    .sub-nav-right-sec {
+      display: flex;
+      gap: 5%;
+      margin-left: 17%;
+
+      min-width: 720px;
+    }
+  }
+  @media (1801px <= width <= 1900px) {
+    .sub-nav-right-sec {
+      display: flex;
+      gap: 5%;
+      margin-left: 19%;
+
+      min-width: 720px;
+    }
+  }
+
+  .nav-cat {
+    white-space: nowrap;
+    text-align: start;
+    font-size: 12.2px;
+    cursor: pointer;
+    position: relative;
+    width: min-content;
+  }
+  .nav-cat::after {
+    content: "";
+    height: 10px;
+    width: 100%;
+    background-color: #09507c;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: -40px;
+    transition: all 2s;
+    pointer-events: none;
+  }
+  .nav-cat:hover::after,
+  .nav-cat:focus::after {
+    opacity: 1;
+  }
+  .search-icon-div {
+    margin-left: 0px;
+  }
+  .search-icon {
+    width: 20px;
+  }
+  #hide-menu {
+    display: none;
+  }
+  /* /////////////////////////////////////////////// */
+  .main-section-div {
+    display: flex;
+    justify-content: center;
+  }
+  .main-sec-left-img,
+  .main-sec-right-img {
+    width: 50%;
+  }
+  .main-sec-boxes {
+    display: flex;
+    justify-content: space-around;
+  }
+  .prospective-box {
+    width: 37%;
+    height: 325px;
+    margin-top: -240px;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    padding-right: 20px;
+  }
+  .graduation-cap {
+    width: 20px;
+    margin-right: 20px;
+  }
+  .prospective-heading {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  .propspective-txt {
+    font-size: 18px;
+    width: 95%;
+  }
+  .prospective-btn {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #fec14f;
+    width: 95%;
+    height: 45px;
+    position: relative;
+  }
+  .prospective-btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: orange;
+    transition: transform 300ms ease;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .prospective-btn:hover::before,
+  .prospective-btn:focus::before {
+    transform: scaleX(1);
+  }
+  .prospective-btn {
+    z-index: 1;
+  }
+  #line-72 {
+    margin-top: -200px;
+  }
+}
