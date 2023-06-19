@@ -208,17 +208,268 @@ body {
   }
 
   /* //////////////////ALUMNI SECTION MOBILE SCREEN #1*/
-  .alumni-work-sec-div {
-    border: 1px solid red;
-    background-color: whitesmoke;
-    height: 250px;
-    margin-top: 60px;
-  }
   .alumni-work-heading {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    margin-top: 40px;
+    margin-top: 75px;
+    margin-bottom: -50px;
+    margin-left: 10px;
+  }
+  .alumni-work-sec-div {
+    background-color: whitesmoke;
+    height: 250px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .alumni-work-img-div {
+    height: 200px;
+  }
+
+  .alumni-work-img-2 {
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .alumni-work-img-3 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .alumni-work-img-4 {
+    margin-left: 25px;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 30px;
+    gap: 50px;
+  }
+  .alumni-work-img-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #barclay-img {
+    width: 190px;
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+  .alumni-work-img-first {
+    width: 185px;
     margin-left: 15px;
+    position: relative;
+    top: 25px;
+  }
+  .alumni-work-img-second {
+    width: 222px;
+    height: 99%;
+  }
+  .agilant {
+    width: 100px !important;
+    aspect-ratio: 1/1 !important;
+  }
+  .alumni-work-img-third,
+  .alumni-work-img-fourth,
+  .alumni-work-img-fifth {
+    width: 175px;
+    position: relative;
+  }
+  .alumni-work-img-third {
+    top: 30px;
+  }
+  .alumni-work-img-fourth {
+    top: -30px;
+  }
+  .alumni-work-img-fifth {
+    top: 15px;
+    transition: opacity 4s;
+  }
+  .alumni-slider-dots {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    margin-left: 100px;
+    margin-top: -45px;
+    padding-bottom: 23px;
+    height: 10px;
+  }
+  .dot {
+    border: none;
+    background-color: dodgerblue;
+    margin-top: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  .dot:hover {
+    background-color: #09507c;
+  }
+  .hidden {
+    display: none;
+  }
+  /*///////////////// SUPPORT PER SCHOLAS SECTION //////////////////*/
+  .support-perscholas-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    background-color: #0079c0;
+  }
+  .support-ps-img {
+    height: 400px;
+  }
+  .support-ps-box-div {
+    background-color: #0079c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .support-ps-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  .support-ps-para {
+    min-width: 300px;
+    max-width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    margin-top: 0px;
+    height: 150px;
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .donate-btn {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #fec14f;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+  }
+  .donate-btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: orange;
+    transition: transform 300ms ease;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .donate-btn:hover::before,
+  .donate-btn:focus::before {
+    transform: scaleX(1);
+  }
+  .donate-btn {
+    z-index: 1;
+  }
+  .bottom-ps-logo {
+    cursor: pointer;
+    height: 120px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .bold-txt,
+  .light-txt {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 1s;
+  }
+  .light-txt {
+    color: rgb(107, 105, 105);
+  }
+  .bold-txt:hover,
+  .light-txt:hover {
+    color: dodgerblue;
+  }
+  .bottom-ps-categories-div,
+  .email-section {
+    border-bottom: 1px solid lightgray;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .email,
+  .adm-ques {
+    line-height: 5px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+  .email {
+    padding-top: 20px;
+  }
+  .email-add {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .email-add:hover {
+    color: dodgerblue;
+  }
+  .social-media-icons {
+    padding-bottom: 20px;
+  }
+  #social-media-logo {
+    width: 30px;
+    margin-left: 12.5px;
+  }
+  /* //////////////////////////////// */
+  .sign-up-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    padding-top: 15px;
+    line-height: 35px;
+    font-size: 25px;
+  }
+  .email-field-div {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .email-add-field {
+    outline: none;
+    height: 40px;
+    width: 225px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+  }
+  .email-add-field::placeholder {
+    font-size: 17.5px;
+  }
+  .sign-up-btn {
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #fec14f;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -5px;
   }
 }
 
